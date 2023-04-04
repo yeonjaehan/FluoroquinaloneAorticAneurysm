@@ -1,5 +1,5 @@
 ---
-title: "Is fluoroquinolone use associated with the development of aortic aneurysms and aortic dissections"
+title: "Is fluoroquinolone use associated with the development of aa and ad"
 fontsize: 12pt
 geometry: margin=1in
 output:
@@ -81,6 +81,7 @@ latex_table_font_size <- 8
 abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
   CDM; Common data model
   CAP; Community Acquired Pneumonia
+  stacy; intern
   ",
   show_col_types = FALSE)
 tab <- knitr::kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
